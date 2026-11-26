@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+datasets/
+outputs/
+videos/
+.env
+.streamlit/secrets.toml
+*.log
+yolo11n.pt
+yolov8s-world.pt
