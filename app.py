@@ -19,7 +19,7 @@ st.set_page_config(
     layout="wide"
 )
 
-MODEL_PATH = os.path.join("models", "action_model_v5.keras")
+MODEL_PATH = os.path.join("models", "action_model_v5_compatible.keras")
 
 LABELS = ["TAKE", "PUT", "TOUCH"]
 
@@ -41,7 +41,7 @@ def load_model():
             f"Model not found: {MODEL_PATH}"
         )
 
-    return tf.keras.models.load_model(MODEL_PATH)
+    return tf.keras.models.load_model(MODEL_PATH, compile=False)
 
 
 # --------------------------------------------------
